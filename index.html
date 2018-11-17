@@ -1,0 +1,112 @@
+
+<div id="app">
+  
+ 
+<section class="hero is-primary header-image">
+      <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+         
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        
+      </div>
+    </nav>
+  </div>    
+  <div class="hero-body">
+    <div class="container">
+
+        <div class="columns is-mobile">
+            <div class="column is-narrow">
+            <img id="mainlogo" src="" alt="">
+
+            </div>
+            <div class="column maintitle">
+            <h1 class="title">
+        Restaurant List
+      </h1>
+      <h2 class="subtitle">
+        
+      </h2>
+            </div>
+          
+        </div>
+
+
+       
+      
+     
+    </div>
+  </div>
+  <div class="hero-foot">
+    <nav>
+      <div class="container">
+        <ul class="cardNav">
+          <li>
+            <div class="field">
+  <p class="control has-icons-left">
+    <input id="searchRestaurants" class="input" type="text" v-model="searchRestaurant" placeholder="Search Restaurants">
+    <span class="icon is-small is-left">
+    <i class="fas fa-search"></i>
+    </span>
+  </p>
+ </div>
+          </li>
+          
+          <li>
+          <div class="field">
+  <div class="control has-icons-left">
+    <div class="select">
+      <select id="filterRestaurants" v-model="sortRestaurants" placeholder="Sort">
+        <option value="" selected>Sort</option>
+        <option value="fav">Favorite Restaurants</option>
+        <option value="topRestaurants">Top Restaurants</option>
+        <option value="bestMatch">Best Match</option>
+        <option value="newest">Newest</option>
+        <option value="ratingAverage">Rating Average</option>
+        <option value="distance">Distance</option>
+        <option value="popularity">Popularity</option>
+        <option value="averageProductPrice">Average Product Price</option>
+        <option value="deliveryCosts">Delivery Costs</option>
+        <option value="minCost">Minimum Costs</option>
+      </select>
+    </div>
+    <div class="icon is-small is-left">
+    <i class="fas fa-sort"></i>
+      </div>
+  </div>
+ </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>  
+  
+  
+  
+  <br><br>
+  <div id="maincontent" class="container">
+  <local-component :restaurantlist="restaurants" :sortrestaurants="sortRestaurants" :searchrestaurant="searchRestaurant"></local-component>
+  </div>
+  
+</div>
+
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Restaurant List</strong> by Erkand Imeri
+    </p>
+  </div>
+</footer>
