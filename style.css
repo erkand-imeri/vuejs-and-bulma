@@ -1,0 +1,67 @@
+#maincontent{
+    min-height: 80vh;
+padding-bottom: 10rem;
+}
+footer.footer{
+    height: 10rem;
+}
+#searchRestaurants,#filterRestaurants{
+    border-bottom-right-radius: 0px !important; 
+    border-bottom-left-radius: 0px !important;  
+    width: 22rem !important;
+    margin: auto !important;
+}
+div.field{
+    padding-left: 10%;
+}
+.header-image{
+    background-image: url("https://i.imgur.com/sWWZllT.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+ div.columns{
+        width: 100%;
+        margin: auto;
+    }
+           div.card{
+                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                 
+  transition: box-shadow 500ms;
+           } 
+           div.card:hover{
+                box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+           }
+           .card-footer-item{
+               text-indent: 5px;
+           }
+           .favoritedIcon{
+               color: #e53939;
+           }
+div.maintitle{
+    padding-top: 2.5%;
+}
+select {
+    font-family: 'FontAwesome', 'sans-serif';
+  }
+  ul.cardNav li{
+      display: inline-flex;
+  }
+ @media only screen and (max-width: 600px) {
+    #searchRestaurants,#filterRestaurants{
+      
+        width: 98vw !important;
+        
+        
+    }
+    ul.cardNav li{
+        display: flex;
+        margin-top: 1%;
+        width: 100vw;
+    }
+    div.field{
+        padding-left: 5%;
+    }
+}
